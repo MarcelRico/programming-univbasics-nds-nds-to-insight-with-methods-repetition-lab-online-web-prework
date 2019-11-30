@@ -30,7 +30,7 @@ def list_of_directors(source)
   source.length.times do |outer_idx|
     movies = source[outer_idx][:movies]
     movies.length.times do |innner_idx|
-      overall_total += movies[innner_idx]
+      overall_total += movies[innner_idx][]
     end
   end
   
