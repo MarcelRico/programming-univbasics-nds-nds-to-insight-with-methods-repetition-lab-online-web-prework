@@ -25,6 +25,11 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
+  
+  
+end
+
+def total_gross
   directors_total_profits = 0
   
   source.length.times do |outer_idx|
@@ -33,8 +38,6 @@ def list_of_directors(source)
       overall_total += movies[innner_idx][]
     end
   end
-  
-  
 end
 
 
