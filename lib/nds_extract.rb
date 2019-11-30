@@ -26,7 +26,11 @@ end
 
 def list_of_directors(source)
   arr = []
-  source
+  
+  source.length.times do |idx|
+    arr << source[idx][:name]  
+  end
+  arr
 end
 
 def total_gross(source)
