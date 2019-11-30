@@ -27,9 +27,11 @@ end
 def list_of_directors(source)
   directors_total_profits = 0
   
-  source.length.times do |idx|
-    
-    
+  source.length.times do |outer_idx|
+    movies = source[outer_idx][:movies]
+    movies.length.times do |innner_idx|
+      
+    end
   end
   
   
