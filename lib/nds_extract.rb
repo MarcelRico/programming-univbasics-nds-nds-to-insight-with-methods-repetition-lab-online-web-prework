@@ -37,7 +37,7 @@ def total_gross(source)
   total_gross
   source.length.times do |idx|
     source[idx][:movies].length.times do |inner_idx|
-      source[idx][:movies][inner_idx][:worldwide_gross]
+
     end
   end
   
