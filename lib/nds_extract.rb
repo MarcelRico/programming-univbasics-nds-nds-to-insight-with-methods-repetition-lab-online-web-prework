@@ -35,7 +35,16 @@ end
 
 def total_gross(source)
   director_list = list_of_directors(source)
-  puts director_list
+
+  worldwide_total = 0
+
+  source.length.times do |outer_idx|
+    source[outer_idx][:movies].length.times do |inner_idx|
+      worldwide_total += source[outer_idx][:movies][inner_idx][:worldwide_gross]
+    end
+  end
+  
+  worldwide_total
 end
 
 
