@@ -25,20 +25,14 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
-  arr = []
+  directors_total_profits = 0
+  
   source.length.times do |idx|
-    arr << source[idx][:name]
+    
+    
   end
-  arr
-end
-
-def total_gross(source)
-  directors_names = list_of_directors(source)
-  total_gross = 0
-  source.length.times do |idx|
-    total_gross += directors_totals(source[idx])[directors_names[:name]]
-  end
-  puts total_gross
+  
+  
 end
 
 
