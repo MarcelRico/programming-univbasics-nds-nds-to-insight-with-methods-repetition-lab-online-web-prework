@@ -40,7 +40,7 @@ def total_gross(source)
 
   source.length.times do |outer_idx|
     source[outer_idx][:movies].length.times do |inner_idx|
-      worldwide_total += directors_totals(source[outer_idx][:movies])
+      worldwide_total += directors_totals(source[outer_idx])
     end
   end
   
